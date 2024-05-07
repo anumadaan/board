@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Sistema di irrigazione{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+  <div class="content-container">  
+
+
+    <p>
+      <strong>Cos'è l'irrigazione?</strong><br>
+      L’irrigazione è il processo di applicazione artificiale dell’acqua alle colture per soddisfare il loro fabbisogno idrico. I nutrienti possono anche essere forniti alle colture attraverso l’irrigazione. Le varie fonti d'acqua per l'irrigazione sono pozzi, stagni, laghi, canali, pozzi tubolari e persino dighe. L'irrigazione fornisce l'umidità necessaria per la crescita e lo sviluppo, la germinazione e altre funzioni correlate.
+    </p>
+   
+    <p>
+      <strong>Frequenza e metodo:</strong><br>
+      La frequenza, il tasso, la quantità e il tempo di irrigazione variano tra le colture e variano anche a seconda del tipo di terreno e delle stagioni. Ad esempio, le colture estive richiedono più acqua rispetto alle colture invernali.
+    </p>
+   
+    <p>
+      <strong>Tipi di irrigazione:</strong><br>
+      Diamo un'occhiata ai diversi tipi di irrigazione e ai metodi utilizzati per l'irrigazione.
+    </p>
+   
+    <p>
+      
+    
+    <!-- Example of displaying an image -->
+    <img src="{{ url_for('static', filename='image/irregation1.jpg') }}" alt="Description of the image" class="irrigation-image" width="300" height="300">
+  
+  </div>
+
+  <li> <a href="https://youtu.be/jjwLn0yvqXI " target="_blank">Watch Video</a></li>
+
+  <li><a href="{{ url_for('pages.just') }}">Chi Siamo</a></li>
+
+
+  {% endblock content %}

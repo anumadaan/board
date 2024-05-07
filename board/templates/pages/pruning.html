@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Potatura piante e ulivi{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+<div class="content-container">
+  <p>
+    Quando si tratta di potare gli alberi, non esistono due situazioni esattamente uguali. E questo è particolarmente vero quando si tratta di potare alberi grandi, alti o maturi! I professionisti degli alberi di American Climbers devono pianificare un lavoro di potatura degli alberi prima ancora di effettuare il primo taglio, decifrare le difficoltà che possono essere incontrate, determinare quale attrezzatura è necessaria, tenere conto di recinzioni strette, linee elettriche e colline ripide, calcolare i rischi e le misure di sicurezza necessarie (e altro!), il tutto mantenendo l'area sicura e le strutture vicine integre.
+
+Una delle cose che può aumentare la difficoltà della potatura degli alberi è la dimensione dell’albero. Adoriamo vedere alberi maturi nei quartieri, poiché offrono grandi vantaggi a tutti noi. Tuttavia, gli alberi maturi necessitano ancora di essere potati e adeguatamente mantenuti, e questo non è sempre un compito facile.
+
+Continua a leggere per imparare</p>:
+
+<p>perché questi enormi alberi dovrebbero essere potati (anche se non è facile),
+alcune delle difficoltà nella potatura di alberi grandi o alti,
+perché la potatura degli alberi di grandi dimensioni richiede in genere più tempo rispetto agli alberi più piccoli e
+come cose come l'assicurazione e l'esperienza possono fare la differenza nella qualità della potatura degli alberi che ricevi.
+    .</p>
+     
+  
+    
+    <img src="{{ url_for('static', filename='image/pruning.jpeg') }}" alt="Description of the image" class="garden-image" width="300" height="300">
+  </div>
+    <li> <a href="https://www.youtube.com/watch?v=uagkKa9oKCA&pp=ygUXUG90YXR1cmEgcGlhbnRlIGUgdWxpdmk%3D" target="_blank">Watch Video</a></li>
+    
+    
+   
+    <li><a href="{{ url_for('pages.triclimbing') }}">Chi Siamo</a></li>
+
+
+    {% endblock content %}
+
+    

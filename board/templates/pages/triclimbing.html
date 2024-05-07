@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Triclimbing-potatura di alberi ad alto fusto{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+<div class="content-container">
+  <p>Il tree climbing è una disciplina che sta prendendo sempre più piede sul territorio italiano. 
+    Letteralmente tree climbing significa “arrampicata su alberi” ed è una disciplina che coniuga l’amore per la natura ed in particolare per gli alberi a quella dell’arrampicata. 
+    Si trasforma in una professione lavorativa unica ed altamente specializzata. I tree climber, o arbonauti, svolgono infatti interventi di manutenzione degli alberi ornamentali prevalentemente in ambito urbano, per preservare la loro esistenza e la loro forma naturale.</p>
+
+    <p> I tree climbers risalgono il fusto degli alberi e penetrano all’interno della chioma della pianta, utilizzando corde, funi e imbraghi. In questo modo è più facile per loro operate interventi mirati di taglio rami per potarli o perché secchi. Si trovano infatti in una posizione privilegiata che permette loro di valutare in modo corretto lo sviluppo naturale della pianta.</p>
+    
+      <p> Ma vediamo con ordine come è nato il tree climbing, quando si utilizza e i suoi principali vantaggi..</p>
+    
+    
+    <img src="{{ url_for('static', filename='image/olive.jpg') }}" alt="Description of the image" class="garden-image" width="300" height="300">
+  </div>
+    <li><a href="https://www.youtube.com/watch?v=JuRT1pfZ4mU&pp=ygUsVHJpY2xpbWJpbmctcG90YXR1cmEgZGkgYWxiZXJpIGFkIGFsdG8gZnVzdG8%3D" target="_blank">Watch Video</a></li>
+    
+    <li><a href="{{ url_for('pages.contacts_us') }}">Chi Siamo</a></li>
+
+    
+   
+   
+    {% endblock content %}

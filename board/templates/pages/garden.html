@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}manutenzione del giardino{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+<div class="content-container">
+  
+<p> Per iniziare, è importante informarsi sulle basi della 
+    manutenzione del giardino. Utilizza risorse di giardinaggio 
+    affidabili come libri, uffici di estensione locali e piattaforme 
+    online per ampliare le tue conoscenze. Queste risorse ti 
+    guideranno nella comprensione delle attività di giardinaggio 
+    necessarie e forniranno preziosi consigli per mantenere il tuo 
+    giardino in condizioni perfette.</p>
+
+    <p> Una corretta pianificazione è fondamentale per una semina di successo. Prenditi il ​​tempo necessario per pianificare la disposizione del tuo giardino, considerando fattori come lo spazio, l'esposizione alla luce solare e la compatibilità delle piante. Ciò garantirà che le tue piante abbiano le migliori possibilità di prosperare e renderà più gestibile la cura ordinaria del giardino.
+    
+    Punti chiave:</p>
+    
+    <p>Informati utilizzando risorse di giardinaggio affidabili
+    Pianifica la disposizione del tuo giardino per una piantagione di successo
+    Comprendi le esigenze delle tue piante
+    Prepara il terreno per una crescita sana
+    Innaffia e diserba regolarmente per una salute ottimale delle piante
+    Implementa strategie di controllo dei parassiti per proteggere le tue piante
+    Raccogli i raccolti al momento giusto e prenditi cura del tuo giardino per tutta la stagione
+    Esplora metodi per il giardinaggio tutto l'anno
+    Investi in strumenti e attrezzature di qualità per una manutenzione efficace del giardino.</p>
+  </div>
+    <img src="{{ url_for('static', filename='image/garden maintain.jpg') }}" alt="Description of the image" class="garden-image" width="300" height="300">
+
+    <li> <a href="https://www.youtube.com/watch?v=B94IPr-IINE&pp=ygUZbWFudXRlbnppb25lIGRlbCBnaWFyZGlubw%3D%3D" target="_blank">Watch Video</a></li>
+    
+    <li><a href="{{ url_for('pages.pruning') }}">Chi Siamo</a></li>
+
+    
+   
+    {% endblock content %}

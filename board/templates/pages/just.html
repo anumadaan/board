@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Creazione del giardino{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+<div class="content-container">
+
+  <p>
+    <h1>La creazione di un giardino</h1>
+
+<p>La creazione di un giardino si riferisce al processo di progettazione, pianificazione e creazione di uno spazio giardino. Si articola in varie fasi, tra cui:</p>
+
+<ol>
+        <li>Scegliere una posizione adatta.</li>
+        <li>Determinare lo scopo e il tema del giardino.</li>
+        <li>Selezione di piante ed elementi paesaggistici appropriati.</li>
+        <li>Esecuzione di lavori fisici come la preparazione del terreno, la semina e la manutenzione continua.</li>
+    </ol>
+
+  </p>
+  
+    
+  <img src="{{ url_for('static', filename='image/gardening1.jpeg') }}" alt="Description of the image" class="garden-image" width="300" height="300">
+</p>
+
+<a href="https://www.youtube.com/watch?v=ChXk4Asb4C0&pp=ygUWQ3JlYXppb25lIGRlbCBnaWFyZGlubw%3D%3D" target="_blank">Watch Video</a>
+
+<li><a href="{{ url_for('pages.garden') }}">Chi Siamo</a></li>
+
+
+{% endblock content %}

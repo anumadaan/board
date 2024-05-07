@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}giardinaggio{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+
+<div class="content-container">
+<h1>Entra nella sezione piante da giardino e scopri le 
+  caratteristiche di tutte le specie che si possono coltivare 
+  in un giardino. In ordine alfabetico troverai le specie e 
+  utilissimi consigli per la 
+  loro cura e per la loro coltivazione. </h1>
+
+
+<img src="{{ url_for('static', filename='image/IMG-20240321-WA0024.jpg') }}" alt="Description of the image" class="garden-image" width="450" height="400">
+
+</div>  
+
+<li><a href="https://youtu.be/RGXyzyBo6pM" target="_blank">Watch Video</a></li>
+
+
+<li><a href="{{ url_for('pages.about') }}">Chi Siamo</a></li>
+    
+
+{% endblock content %}

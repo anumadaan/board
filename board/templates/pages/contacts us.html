@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Contattaci{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+
+<div class="content-container">
+<p1>Best practice per la pagina Contattaci
+  Come accennato in precedenza, una pagina Contattaci è una delle pagine più preziose che puoi avere sul tuo sito.  </p1>
+    
+<img src="{{ url_for('static', filename='image/IMG-20240321-WA0025.jpg') }}" alt="Description of the image" class="garden-image" width="450" height="400">
+
+<li><a href="{{ url_for('pages.home') }}">Chi Siamo</a></li>
+</div>    
+{% endblock content %}
